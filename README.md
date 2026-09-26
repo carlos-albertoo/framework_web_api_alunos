@@ -91,3 +91,12 @@ npm run dev
 
 **Disciplina:** Programação para Frameworks Web
 **Professor:** Thiago Rodrigues
+**Colaborador:** Carlos Alberto
+
+## 📝 Atualizações Recentes
+
+O projeto foi atualizado com as seguintes funcionalidades para a entidade **Aluno**:
+- Busca de aluno por ID (`findUnique`)
+- Atualização de aluno (`update`)
+- Remoção de aluno (`delete`)
+- Adicionada ordenação e contagem total na listagem de alunos (`findMany`)
