@@ -27,6 +27,16 @@ class AlunoController{
         }
     }
 
+    async update(request, response){
+        try{
+            const { id } = request.params;
+            const alunoAtualizado = await alunoService.update(id, request.body);
+            return response.status(200).json({aluno: alunoAtualizado});
+        }catch(error){
+            return response.status(error.statusCode || 400).json({error: error.message});
+        }
+    }
+
     async create(request, response){
         try{
             const aluno = await alunoService.create(request.body);
